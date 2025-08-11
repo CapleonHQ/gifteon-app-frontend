@@ -1,8 +1,15 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-sf-pro: var(--font-sf-pro), -apple-system, BlinkMacSystemFont,
+    'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 @theme inline {
@@ -12,15 +19,53 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sf-pro);
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+@layer base {
+  button:not(:disabled),
+  [role='button']:not(:disabled) {
+    cursor: pointer;
+  }
+}
+.motion-container {
+  overflow: hidden;
+  width: 100%;
+}
+
+.testimonials-swiper {
+  padding-bottom: 60px !important;
+}
+
+.testimonials-swiper .swiper-pagination {
+  bottom: 20px !important;
+}
+
+.custom-bullet {
+  width: 12px !important;
+  height: 12px !important;
+  background: #d1d5db !important;
+  opacity: 1 !important;
+  margin: 0 6px !important;
+  transition: all 0.3s ease !important;
+}
+
+.custom-bullet:hover {
+  background: #9ca3af !important;
+  transform: scale(1.2) !important;
+}
+
+.custom-bullet-active {
+  background: linear-gradient(135deg, #fb923c, #ef4444) !important;
+  transform: scale(1.25) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: none !important;
 }
