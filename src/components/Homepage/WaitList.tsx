@@ -65,7 +65,7 @@ const Waitlist = () => {
         setStatus('error')
         setMessage(data.error)
       }
-    } catch (error) {
+    } catch {
       setStatus('error')
       setMessage('Something went wrong. Please try again.')
     }

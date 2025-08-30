@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Cake, Gift, Play, Sparkles, Star } from 'lucide-react'
+import { Cake, Play, Sparkles, Star } from 'lucide-react'
 import Link from 'next/link'
 
 const Hero = () => {

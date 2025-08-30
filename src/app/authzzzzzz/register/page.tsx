@@ -49,10 +49,11 @@ const RegisterPage = () => {
 
       // After successful registration, move to verification step
       setCurrentStep('verification')
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       console.log(error)
 
-      let errorMessage =
+      const errorMessage =
         error?.response?.data?.message ||
         error?.message ||
         'Registration failed. Please try again.'

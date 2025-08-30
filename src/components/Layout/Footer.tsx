@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { Gift, Heart } from 'lucide-react'
+import { Heart } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 
