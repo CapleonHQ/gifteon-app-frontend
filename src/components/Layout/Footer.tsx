@@ -3,6 +3,8 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Gift, Heart } from 'lucide-react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 const Footer = () => {
   const footerLinks = {
@@ -34,14 +36,21 @@ const Footer = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <div className='flex items-center space-x-3 mb-3'>
-              <div className='w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-orange-400 to-pink-500 rounded-xl flex items-center justify-center'>
-                <Gift className='w-4 h-4 sm:w-5 sm:h-5 text-white' />
-              </div>
-              <span className='text-xl sm:text-2xl font-bold text-[#EA580C]'>
-                Gifteon
-              </span>
-            </div>
+            <Link href='/'>
+              <motion.div
+                className='w-[130px] sm:w-[150px] h-[50px] sm:h-[60px]'
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: 'spring', stiffness: 400, damping: 10 }}
+              >
+                <Image
+                  src='/assets/images/logo-white-new.png'
+                  alt='Giftseon Logo'
+                  width={200}
+                  height={60}
+                  className='w-full h-full'
+                />
+              </motion.div>
+            </Link>
             <p className='text-[#9CA3AF] leading-[24px] max-w-sm'>
               Making every celebration memorable with beautiful, personalized
               gift experiences.
@@ -97,7 +106,7 @@ const Footer = () => {
         >
           <div className='flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0'>
             <p className='text-[#9CA3AF] text-sm sm:text-base'>
-              © 2025 Gifteon. Made with{' '}
+              © 2025 Giftseon. Made with{' '}
               <motion.span
                 className='inline-block'
                 animate={{ scale: [1, 1.2, 1] }}

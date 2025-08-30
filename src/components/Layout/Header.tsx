@@ -4,6 +4,7 @@ import React, { useState, useEffect } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Gift, Menu, X } from 'lucide-react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
@@ -53,16 +54,17 @@ const Header = () => {
           {/* Logo */}
           <Link href='/'>
             <motion.div
-              className='flex items-center space-x-2'
+              className='w-[130px] sm:w-[150px] h-[50px] sm:h-[60px]'
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 400, damping: 10 }}
             >
-              <div className='w-8 h-8 sm:w-10 sm:h-10 bg-gradient-to-r from-orange-400 to-pink-500 rounded-xl flex items-center justify-center'>
-                <Gift className='w-4 h-4 sm:w-5 sm:h-5 text-white' />
-              </div>
-              <span className='text-xl sm:text-2xl font-bold text-[#EA580C]'>
-                Gifteon
-              </span>
+              <Image
+                src='/assets/images/logo-grey.png'
+                alt='Giftseon Logo'
+                className='w-full h-full'
+                width={200}
+                height={60}
+              />
             </motion.div>
           </Link>
           <div className='flex items-center gap-8'>
@@ -84,19 +86,22 @@ const Header = () => {
             </nav>
 
             {/* Desktop CTA Button */}
-            <motion.button
-              className='hidden md:block bg-gradient-to-r from-[#F97316] to-[#EC4899] text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-200'
-              initial={{ opacity: 0, scale: 0.9 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ delay: 0.3, duration: 0.4 }}
-              whileHover={{
-                scale: 1.05,
-                boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
-              }}
-              whileTap={{ scale: 0.98 }}
-            >
-              Start Your Celebration
-            </motion.button>
+            <Link href='/#waitlist'>
+              <motion.span
+                className='hidden md:block bg-gradient-to-r from-[#F97316] to-[#EC4899] text-white px-8 py-4 rounded-xl font-semibold hover:shadow-lg transition-all duration-200'
+                initial={{ opacity: 0, scale: 0.9 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ delay: 0.3, duration: 0.4 }}
+                whileHover={{
+                  scale: 1.05,
+                  boxShadow: '0 10px 25px rgba(0,0,0,0.1)',
+                }}
+                whileTap={{ scale: 0.98 }}
+              >
+                Join Waitlist
+                {/* Start Your Celebration */}
+              </motion.span>
+            </Link>
 
             {/* Mobile Menu Button */}
             <motion.button
@@ -165,16 +170,22 @@ const Header = () => {
                 </nav>
 
                 {/* Mobile CTA Button */}
-                <motion.button
-                  className='w-full bg-gradient-to-r from-[#F97316] to-[#EC4899] text-white px-6 py-4 rounded-xl font-semibold mt-6'
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.3 }}
-                  whileHover={{ scale: 1.02 }}
-                  whileTap={{ scale: 0.98 }}
+                <Link
+                  href='/#waitlist'
+                  onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Start Your Celebration
-                </motion.button>
+                  <motion.span
+                    className='w-full bg-gradient-to-r from-[#F97316] to-[#EC4899] text-white px-6 py-4 rounded-xl font-semibold mt-6'
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.3 }}
+                    whileHover={{ scale: 1.02 }}
+                    whileTap={{ scale: 0.98 }}
+                  >
+                    Join Waitlist
+                    {/* Start Your Celebration */}
+                  </motion.span>
+                </Link>
               </div>
             </motion.div>
           </>
