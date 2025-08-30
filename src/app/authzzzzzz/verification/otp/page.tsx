@@ -255,7 +255,7 @@ const EmailVerificationFlow = () => {
         </p>
 
         <div className='text-center'>
-          <p className='text-black text-base mb-2'>Didn't receive link?</p>
+          <p className='text-black text-base mb-2'>Didn&apos;t receive link?</p>
 
           <div className='flex items-center justify-center space-x-2 text-black'>
             <span>You can resend in</span>

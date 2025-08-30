@@ -2,7 +2,7 @@
 
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'next/link'
-import { Gift, Lock, Mail, CheckCircle, ArrowLeft } from 'lucide-react'
+import { Gift, CheckCircle, ArrowLeft } from 'lucide-react'
 import Image from 'next/image'
 
 type VerificationStep =
@@ -273,7 +273,7 @@ const EmailVerificationFlow = () => {
 
         <div className='text-center'>
           <p className='text-black text-sm sm:text-base mb-2'>
-            Didn't receive link?
+            Didn&apos;t receive link?
           </p>
 
           <div className='flex flex-col sm:flex-row items-center justify-center space-y-1 sm:space-y-0 sm:space-x-2 text-black text-xs sm:text-sm'>

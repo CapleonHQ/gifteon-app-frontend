@@ -44,10 +44,11 @@ const LoginPage = () => {
     try {
       await loginUser({ email })
       setCurrentStep('verification')
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
       console.log(error)
 
-      let errorMessage =
+      const errorMessage =
         error?.response?.data?.message ||
         error?.message ||
         'Login failed. Please try again.'
@@ -115,8 +116,9 @@ const LoginPage = () => {
         setIsLoading(true)
         await verifyOtp({ email, otp: otp.join() })
       }
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (error: any) {
-      let errorMessage =
+      const errorMessage =
         error?.response?.data?.message ||
         error?.message ||
         'Login failed. Please try again.'
@@ -277,7 +279,7 @@ const LoginPage = () => {
 
         {/* Sign Up Link */}
         <p className='text-center text-black text-lg font-medium'>
-          Don't have an account?{' '}
+          Don&apos;t have an account?{' '}
           <Link
             href='/auth/register'
             className='text-[#F35427] font-semibold hover:text-orange-600 transition-colors duration-200'
