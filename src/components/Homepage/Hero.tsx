@@ -3,6 +3,7 @@
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Cake, Gift, Play, Sparkles, Star } from 'lucide-react'
+import Link from 'next/link'
 
 const Hero = () => {
   const fadeInUp = {
@@ -67,19 +68,24 @@ const Hero = () => {
               variants={fadeInUp}
               className='flex flex-col sm:flex-row gap-4 justify-center lg:justify-start'
             >
-              <motion.button
-                className='bg-gradient-to-r from-[#F97316] via-[#F25C5B] to-[#EC4899] text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center space-x-2'
-                whileHover={{ scale: 1.05, y: -2 }}
-                whileTap={{ scale: 0.98 }}
-              >
-                <span>Start Your Celebration</span>
+              <Link href='/#waitlist'>
                 <motion.span
-                  animate={{ x: [0, 4, 0] }}
-                  transition={{ repeat: Infinity, duration: 1.5 }}
+                  className='bg-gradient-to-r from-[#F97316] via-[#F25C5B] to-[#EC4899] text-white px-8 py-4 rounded-xl font-semibold text-lg shadow-lg hover:shadow-xl transition-all duration-200 flex items-center justify-center space-x-2'
+                  whileHover={{ scale: 1.05, y: -2 }}
+                  whileTap={{ scale: 0.98 }}
                 >
-                  →
+                  <span>
+                    Join Waitlist
+                    {/* Start Your Celebration */}
+                  </span>
+                  <motion.span
+                    animate={{ x: [0, 4, 0] }}
+                    transition={{ repeat: Infinity, duration: 1.5 }}
+                  >
+                    →
+                  </motion.span>
                 </motion.span>
-              </motion.button>
+              </Link>
 
               <motion.button
                 className='border border-[#FED7AA] text-[#C2410C] px-8 py-4 rounded-xl font-semibold text-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 flex items-center justify-center space-x-2'

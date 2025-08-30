@@ -129,7 +129,7 @@ const StatsFeatures = () => {
               </h2>
               <p className='text-lg sm:text-xl text-[#4B5563] max-w-3xl mx-auto leading-relaxed'>
                 From birthdays to weddings, graduations to creative projects -
-                Gifteon makes every moment special
+                Giftseon makes every moment special
               </p>
             </motion.div>
 

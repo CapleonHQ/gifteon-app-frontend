@@ -20,7 +20,7 @@ const Testimonials = () => {
       avatar: 'J',
       avatarColor: 'bg-gradient-to-br from-orange-400 to-red-500',
       quote:
-        "Gifteon has transformed how I connect with my audience. It's not just about gifts - it's about building a real community around my creative work.",
+        "Giftseon has transformed how I connect with my audience. It's not just about gifts - it's about building a real community around my creative work.",
     },
     {
       name: 'Sarah Adebayo',
@@ -28,7 +28,7 @@ const Testimonials = () => {
       avatar: 'S',
       avatarColor: 'bg-gradient-to-br from-pink-400 to-purple-500',
       quote:
-        'Planning celebrations became so much easier with Gifteon. My clients love how their guests can contribute meaningfully to special moments.',
+        'Planning celebrations became so much easier with Giftseon. My clients love how their guests can contribute meaningfully to special moments.',
     },
     {
       name: 'Michael Chen',
@@ -36,7 +36,7 @@ const Testimonials = () => {
       avatar: 'M',
       avatarColor: 'bg-gradient-to-br from-blue-400 to-cyan-500',
       quote:
-        'We used Gifteon for our startup launch party. The community response was incredible - it felt like everyone was truly part of our journey.',
+        'We used Giftseon for our startup launch party. The community response was incredible - it felt like everyone was truly part of our journey.',
     },
     {
       name: 'Aisha Mohammed',
@@ -44,7 +44,7 @@ const Testimonials = () => {
       avatar: 'A',
       avatarColor: 'bg-gradient-to-br from-green-400 to-teal-500',
       quote:
-        "My students surprised me with a Gifteon page for Teacher's Day. The heartfelt messages and support meant more than any gift ever could.",
+        "My students surprised me with a Giftseon page for Teacher's Day. The heartfelt messages and support meant more than any gift ever could.",
     },
   ]
 

@@ -120,7 +120,7 @@ const HowItWorks = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className='text-3xl sm:text-4xl  font-bold text-[#111827] mb-4'>
-              How Gifteon Works
+              How Giftseon Works
             </h2>
             <p className='text-lg sm:text-xl text-[#4B5563] max-w-3xl mx-auto leading-relaxed'>
               Simple steps to create memorable celebrations
