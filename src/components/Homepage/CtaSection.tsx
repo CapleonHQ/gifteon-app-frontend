@@ -250,7 +250,7 @@ const Waitlist = () => {
                 <motion.button
                   type='submit'
                   disabled={status === 'loading' || status === 'success'}
-                  className='w-full bg-white text-[#9333EA] py-4 px-6 rounded-2xl font-bold disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-2xl'
+                  className='w-full bg-white text-[#EA580C] py-4 px-6 rounded-2xl font-bold disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200 shadow-2xl'
                   whileHover={
                     status === 'idle' || status === 'error'
                       ? { scale: 1.02 }
@@ -265,7 +265,7 @@ const Waitlist = () => {
                   {status === 'loading' ? (
                     <div className='flex items-center justify-center space-x-2'>
                       <motion.div
-                        className='w-5 h-5 border-2 border-[#9333EA] border-t-transparent rounded-full'
+                        className='w-5 h-5 border-2 border-[#EA580C] border-t-transparent rounded-full'
                         animate={{ rotate: 360 }}
                         transition={{
                           duration: 1,
@@ -307,7 +307,7 @@ const Waitlist = () => {
                   <motion.button
                     type='submit'
                     disabled={status === 'loading' || status === 'success'}
-                    className='bg-white text-[#9333EA] px-8 py-4 font-bold disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200'
+                    className='bg-white text-[#EA580C] px-8 py-4 font-bold disabled:opacity-50 disabled:cursor-not-allowed transition-all duration-200'
                     whileHover={
                       status === 'idle' || status === 'error'
                         ? { scale: 1.05 }
@@ -321,7 +321,7 @@ const Waitlist = () => {
                   >
                     {status === 'loading' ? (
                       <motion.div
-                        className='w-5 h-5 border-2 border-[#9333EA] border-t-transparent rounded-full'
+                        className='w-5 h-5 border-2 border-[#EA580C] border-t-transparent rounded-full'
                         animate={{ rotate: 360 }}
                         transition={{
                           duration: 1,

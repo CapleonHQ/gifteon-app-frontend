@@ -20,10 +20,10 @@ const StatsFeatures = () => {
   }
 
   const stats = [
-    { value: '50K+', label: 'Celebrations Created' },
-    { value: '₦2.5B+', label: 'Gifts Shared' },
-    { value: '200K+', label: 'Happy Users' },
-    { value: '99.9%', label: 'Uptime' },
+    { value: '50K+', label: 'Future Celebrations' },
+    { value: '₦2.5B+', label: 'Gifts To Share' },
+    { value: '200K+', label: "Users We'll Serve" },
+    { value: '100%', label: 'Commitment To You' },
   ]
 
   const features = [

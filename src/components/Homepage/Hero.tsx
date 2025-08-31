@@ -87,14 +87,14 @@ const Hero = () => {
                 </motion.span>
               </Link>
 
-              <motion.button
+              {/* <motion.button
                 className='border border-[#FED7AA] text-[#C2410C] px-8 py-4 rounded-xl font-semibold text-lg hover:border-gray-400 hover:bg-gray-50 transition-all duration-200 flex items-center justify-center space-x-2'
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >
                 <Play className='w-5 h-5' />
                 <span>Watch Demo</span>
-              </motion.button>
+              </motion.button> */}
             </motion.div>
 
             {/* User Avatars and Trust */}
