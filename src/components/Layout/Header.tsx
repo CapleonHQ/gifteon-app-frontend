@@ -54,12 +54,12 @@ const Header = () => {
           {/* Logo */}
           <Link href='/'>
             <motion.div
-              className='w-[130px] sm:w-[150px] h-[50px] sm:h-[60px]'
+              className='w-[130px] sm:w-[150px]'
               whileHover={{ scale: 1.05 }}
               transition={{ type: 'spring', stiffness: 400, damping: 10 }}
             >
               <Image
-                src='/assets/images/logo-grey.png'
+                src='/assets/images/logo-primary.png'
                 alt='Giftseon Logo'
                 className='w-full h-full'
                 width={200}
